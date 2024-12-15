@@ -34,7 +34,6 @@ export class App extends React.Component<{}, State> {
   componentDidMount() {
     this.timerId = window.setInterval(() => {
       this.setState({ clockName: getRandomName() });
-
     }, 3300);
 
     document.addEventListener('contextmenu', this.handleHideClock);
